@@ -1,4 +1,7 @@
 import React from "react";
+// import { getDatabase, ref, onValue } from "firebase/database";
+// import { useEffect, useState } from "react";
+// import { app } from "./firebase/index.js";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {
   FaFacebookF,
@@ -17,6 +20,21 @@ const LeftBanner = () => {
     deleteSpeed: 10,
     delaySpeed: 2000,
   });
+
+  // const [Halaman1, setHalaman1] = useState({});
+  // useEffect(() => {
+  //   const db = getDatabase();
+  //   const Halaman1Ref = ref(db, "Halaman1/");
+  //   onValue(
+  //     Halaman1Ref,
+  //     (snapshot) => {
+  //       const data = snapshot.val();
+  //       setHalaman1(data);
+  //     },
+  //     []
+  //   );
+  // });
+
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
